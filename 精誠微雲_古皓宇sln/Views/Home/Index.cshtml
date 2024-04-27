@@ -1,0 +1,44 @@
+﻿@using 精誠微雲_古皓宇sln.ViewModels
+@model IEnumerable<UserViewModel>
+
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Welcome</h1>
+	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<table>
+	<thead>
+		<tr>
+			<th>NationId</th>
+			<th>BranchId</th>
+			<th>AcctSerialId</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>@item.NationId</td>
+				<td>@item.BranchId</td>
+				<td>@item.AcctSerialId</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+
+
+
+@section Scripts{
+
+	<script>
+
+	</script>
+
+
+
+}
